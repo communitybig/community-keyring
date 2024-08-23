@@ -10,10 +10,10 @@ msg() {
 
 post_upgrade() {
     if usr/bin/pacman-key -l >/dev/null 2>&1; then
-        usr/bin/pacman-key --populate community-keyring
+        usr/bin/pacman-key --populate community
     else
         pacman-key --init
-        pacman-key --populate community-keyring
+        pacman-key --populate community
     fi
     
     md5sum=$(md5sum /etc/pacman.conf | awk '{print $1}')
@@ -91,6 +91,7 @@ Include = /etc/pacman.d/mirrorlist
 [community-stable]
 SigLevel = PackageRequired
 Server = https://repo.communitybig.org/stable/$arch
+
 
 ' | tee /etc/pacman.conf
     fi

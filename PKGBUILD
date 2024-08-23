@@ -9,17 +9,17 @@
 
 pkgname=community-keyring
 pkgver=20240821
-pkgrel=1
+pkgrel=2
 pkgdesc='Community PGP keyring'
 arch=('any')
 url='https://communitybig.org'
-license=('GPL')
+license=('MIT')
 install="${pkgname}.install"
 source=('Makefile'
-        'community-keyring.gpg'
+        'community.gpg'
         'community-revoked'
         'community-trusted')
-sha256sums=('2ef491c2ca18602b8cf02bf6ed39ad5a06824dbaea0ddf81def2918086f27c3a'
+sha256sums=('a1854cd47ca0511e421e664ea79379cc7b384c3a592d96035204f66fb699dd0d'
             '41cbeb67f535495deb012c77216949ce6ef1344d1238894b45de589423441264'
             'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
             'dcc2d34b99ff8a58efe72b95b36d934a47f947d994102b1be441b1d4cd2c5e48')
