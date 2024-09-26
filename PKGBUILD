@@ -19,7 +19,7 @@ source=('Makefile'
         'community.gpg'
         'community-revoked'
         'community-trusted')
-sha256sums=('a1854cd47ca0511e421e664ea79379cc7b384c3a592d96035204f66fb699dd0d'
+sha256sums=('e002977fc7e53639d81768100efdc36c2438ab5f3b71d4e343aecb3b03cf14df'
             '41cbeb67f535495deb012c77216949ce6ef1344d1238894b45de589423441264'
             'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
             '6c6019d563905d64fbb960272268c13b027f4851e0f1666fee52d4bfeeb70484')
