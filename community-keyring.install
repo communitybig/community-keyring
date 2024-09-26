@@ -1,14 +1,12 @@
 post_upgrade() {
-    if usr/bin/pacman-key -l >/dev/null 2>&1; then
-        usr/bin/pacman-key --populate community
-    else
-        pacman-key --init
-        pacman-key --populate community
+    if ! /usr/bin/pacman-key -l >/dev/null 2>&1; then
+        /usr/bin/pacman-key --init
     fi
+    /usr/bin/pacman-key --populate community
 }
 
 post_install() {
-    if [ -x usr/bin/pacman-key ]; then
+    if [ -x /usr/bin/pacman-key ]; then
         post_upgrade
     fi
 }

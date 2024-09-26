@@ -1,6 +1,6 @@
 V=20240821
 
-PREFIX = /usr/local
+PREFIX ?= /usr
 
 update:
 	gpg --recv-keys $(cat community-trusted | cut -d: -f1) $(cat community-revoked)
